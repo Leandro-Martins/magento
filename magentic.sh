@@ -81,16 +81,16 @@ function instalar {
 
     echo Baixando os pacotes...
     echo
-    #wget http://www.magentocommerce.com/downloads/assets/$mgversion/magento-$mgversion.tar.gz \
-         #-O magento.tar.gz
-    #cp magento.tar.gz /opt/
-    cp /opt/magento.tar.gz .
+    wget http://www.magentocommerce.com/downloads/assets/$mgversion/magento-$mgversion.tar.gz \
+         -O magento.tar.gz
+    cp magento.tar.gz /opt/
+    #cp /opt/magento.tar.gz .
 
     if [ "$sample" = "s" ]; then
-        #wget http://www.magentocommerce.com/downloads/assets/$mgsdversion/magento-sample-data-$mgsdversion.tar.gz \
-             #-O magento-sample-data.tar.gz
-        #cp magento-sample-data.tar.gz /opt/
-        cp /opt/magento-sample-data.tar.gz .
+        wget http://www.magentocommerce.com/downloads/assets/$mgsdversion/magento-sample-data-$mgsdversion.tar.gz \
+             -O magento-sample-data.tar.gz
+        cp magento-sample-data.tar.gz /opt/
+        #cp /opt/magento-sample-data.tar.gz .
     fi
 
     echo
